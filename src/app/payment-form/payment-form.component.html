@@ -1,0 +1,11 @@
+<h1 class="title">Payment Form</h1>
+
+<justifi-payment-form
+  [accountId]="accountId"
+  [clientId]="clientId"
+  [iframeOrigin]="iframeOrigin"
+  [card]="true"
+  [bankAccount]="true"
+  (submitted)="handleSubmit($event)"
+  [submitButtonText]="'Submit'"
+></justifi-payment-form>

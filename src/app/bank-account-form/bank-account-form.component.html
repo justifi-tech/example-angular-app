@@ -1,0 +1,19 @@
+<h1 class="title">Bank Account Form</h1>
+<justifi-bank-account-form
+  #bankAccountForm
+  [validationMode]="validationModeValue"
+  (ready)="onReady()"
+  (bankAccountFormValidate)="onBankAccountFormValidate($event)"
+  (bankAccountFormReady)="onBankAccountFormReady()"
+  (bankAccountFormTokenize)="onBankAccountFormTokenize($event)"
+>
+</justifi-bank-account-form>
+<div class="buttons">
+  <button
+    class="button is-primary"
+    (click)="onValidateClick()"
+    [disabled]="!bankAccountFormReady"
+  >
+    Validate
+  </button>
+</div>

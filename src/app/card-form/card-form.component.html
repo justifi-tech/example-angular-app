@@ -1,0 +1,10 @@
+<h1 class="title">Card Form</h1>
+<justifi-card-form
+  [validationMode]="validationModeValue"
+  [iframeOrigin]="iframeOrigin"
+  (cardFormReady)="onCardFormReady($event)"
+  (ready)="onReady($event)"
+  (cardFormTokenize)="onTokenize($event)"
+  (cardFormValidate)="onValidate($event)"
+>
+</justifi-card-form>

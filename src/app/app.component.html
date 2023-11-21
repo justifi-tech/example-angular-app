@@ -1,34 +1,16 @@
 <div class="content" role="main">
-
   <!-- Components -->
-  <div>
-    <!-- https://storybook.justifi.ai/?path=/docs/components-bankaccountform--docs -->
-    <h2>Bank Account Form</h2>
-    <justifi-bank-account-form [validationMode]="validationModeValue"
-      (bankAccountFormReady)="onBankAccountFormReady($event)" (ready)="onReady($event)"
-      (bankAccountFormTokenize)="onTokenize($event)" (bankAccountFormValidate)="onValidate($event)">
-    </justifi-bank-account-form>
-  </div>
-
-  <div>
-    <!-- https://storybook.justifi.ai/?path=/docs/components-cardform--docs -->
-    <h2>Card Form</h2>
-    <justifi-card-form [validationMode]="validationModeValue" (bankAccountFormReady)="onBankAccountFormReady($event)"
-      (ready)="onReady($event)" (bankAccountFormTokenize)="onTokenize($event)"
-      (bankAccountFormValidate)="onValidate($event)">
-    </justifi-card-form>
-  </div>
-
-  <div>
-    <!-- https://storybook.justifi.ai/?path=/docs/components-billingform--docs -->
-    <h2>Billing Form</h2>
-    <justifi-billing-form legend="Example custom legend text">
-    </justifi-billing-form>
-  </div>
-
-  <div>
-    <!-- https://storybook.justifi.ai/?path=/docs/components-paymentform--docs -->
-    <h2>Payment Form</h2>
-    <justifi-payment-form card="true" bank-account="true"></justifi-payment-form>
+  <div class="container">
+    <aside class="side-bar">
+      <h2 class="link">
+        <a [routerLink]="['bank-account-form']">Bank Account Form</a>
+      </h2>
+      <h2 class="link"><a [routerLink]="['card-form']">Card Form</a></h2>
+      <h2 class="link"><a [routerLink]="['billing-form']">Billing Form</a></h2>
+      <h2 class="link"><a [routerLink]="['payment-form']">Payment Form</a></h2>
+    </aside>
+    <div class="components-container">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

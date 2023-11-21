@@ -1,12 +1,40 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   color: #333;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  background-color: #eeeef5;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.side-bar {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px;
+}
+
+.components-container {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.link {
+  font-family: var(--jfi-layout-font-family);
 }
 
 /* JustiFi component css variables */
